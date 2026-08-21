@@ -78,7 +78,7 @@ fun JeevanTopHeader(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(start = 20.dp, end = 20.dp, top = 16.dp, bottom = 22.dp)
+                .padding(start = 20.dp, end = 20.dp, top = 16.dp, bottom = 18.dp)
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -130,42 +130,6 @@ fun JeevanTopHeader(
                         imageVector = Icons.Default.Notifications,
                         contentDescription = "Notifications",
                         tint = Color.White
-                    )
-                }
-            }
-
-            if (employee != null) {
-                Spacer(modifier = Modifier.height(14.dp))
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clip(RoundedCornerShape(12.dp))
-                        .background(Color.White.copy(alpha = 0.1f))
-                        .padding(horizontal = 12.dp, vertical = 8.dp),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Icon(
-                            imageVector = Icons.Default.Business,
-                            contentDescription = null,
-                            tint = Color.White.copy(alpha = 0.85f),
-                            modifier = Modifier.size(16.dp)
-                        )
-                        Spacer(modifier = Modifier.width(6.dp))
-                        Text(
-                            text = "${employee.department} • ${employee.designation}",
-                            color = Color.White.copy(alpha = 0.95f),
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Normal
-                        )
-                    }
-                    Text(
-                        text = employee.employeeCode,
-                        color = JeevanTealAccent,
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = FontFamily.Monospace
                     )
                 }
             }
