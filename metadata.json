@@ -1,0 +1,6 @@
+{
+  "name": "Jeevan Companies Employee App",
+  "description": "Official employee punching, attendance tracking, leave management, and salary slip application for Jeevan Companies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
